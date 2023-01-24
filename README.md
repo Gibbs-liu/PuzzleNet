@@ -36,9 +36,28 @@ tqdm==4.64.0
 
 ## Dataset Processing Steps
 
-The dataset are packed as `npy` files in `./data/` folder. The files are pre-processed and used as training or testing dataset for different categories. 
+The dataset are packed as `npy` files in `./data/` folder. The files are pre-processed and used as training or testing dataset for different categories.  We provide three categories as default, which are `vase, airplane, bed` from dataset `ModelNet40`. And the geometric dataset is modified from `DublinCity`. 
 
-The steps for 
+The steps for processing your own dataset is as followed:
+
+1. Download dataset from ModelNet40 or others. In our work, we take ModelNet40 as an example.
+2. Convert the `.off` files into point clouds `.ply`  files first by open-source software `CloudCompare`. We strongly recommand to use the command-line interface to do this with a script. The number of sampled points from each mesh is  about 12000.
+3. Normalization the points into an unit sphere of $[0,1]^3$.
+4. Split the dataset into traing set and testing set.
+5. Add or modify the corresponding code in `dataset.py`.
 
 ## Usage
 
+**training**
+
+```shell
+python train.py --batch_size 64 --lr 0.9e-3 --loss_mode 1 --dataset bed_sphere --pretrain_epochs 0 --device $cuda_number$
+```
+
+**testing**
+
+```shell
+python test.py
+```
+
+The `test.py` script will automaticly use the same cuda device as the training step.
