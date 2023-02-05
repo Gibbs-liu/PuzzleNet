@@ -4,7 +4,7 @@ This is a pytorch implementation of PuzzleNet: Boundary-Aware Feature Matching f
 
 ## News
 
-2022.12.20: This paper is received by Computational Visual Media Conference(CVM2023).
+2022.12.20: This paper is accepted by Computational Visual Media Conference (CVM2023).
 
 ## Astract
 
