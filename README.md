@@ -8,13 +8,11 @@ This is a pytorch implementation of PuzzleNet: Boundary-Aware Feature Matching f
 
 ## Astract
 
-![image-20230124200939217](README.assets/image-20230124200939217.png)
-
 We address the 3D shape assembly of multiple geometric pieces without overlaps, a scenario often encountered in 3D shape design, field archeology, and robotics. Existing methods depend on strong assumptions on the number of shape pieces and coherent geometry or semantics of shape pieces. Despite raising attention on 3D registration with complex or low overlapping patterns, few methods consider shape assembly with rare overlaps. To address this problem, we present a novel framework inspired by solving puzzles, named PuzzleNet, which conducts multi-task learning by leveraging both 3D alignment and boundary information. Specifically, we design an end-to-end neural network based on a point cloud transformer with two-way branches for estimating rigid transformation and predicting boundaries simultaneously. The framework is then naturally extended to reassemble multiple pieces into a full shape by using an iterative greedy approach based on the distance between each pair of candidate-matched pieces. We train and evaluate PuzzleNet on both real-world urban scan data (DublinCity) and synthetic CAD models (ModelNet40). Experiments demonstrate our effectiveness in solving 3D shape assembly for multiple pieces with arbitrary geometry and inconsistent semantics. We significantly outperform state-of-the-art 3D registration approaches as well as the closely related method for shape mating.
 
 ## Architecture
 
-![image-20230124201035974](README.assets/image-20230124201035974.png)
+
 
 ## Requirements
 
