@@ -59,3 +59,19 @@ python test.py
 ```
 
 The `test.py` script will automaticly use the same cuda device as the training step.
+
+# Bibtex
+```
+@Article{liu2023PuzzleNet,
+title = {PuzzleNet: Boundary-Aware Feature Matching for Non-Overlapping 3D Point Clouds Assembly},
+journal = {Journal of Computer Science and Technology},
+volume = {38},
+number = {3},
+pages = {492-509},
+year = {2023},
+issn = {1000-9000(Print) /1860-4749(Online)},
+doi = {10.1007/s11390-023-3127-8},	
+url = {https://jcst.ict.ac.cn/en/article/doi/10.1007/s11390-023-3127-8},
+author = {Hao-Yu Liu and Jian-Wei Guo and Hai-Yong Jiang and Yan-Chao Liu and Xiao-Peng Zhang and Dong-Ming Yan}
+}
+```
